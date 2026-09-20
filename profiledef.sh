@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # shellcheck disable=SC2034
 
-iso_name="ezarch-cosmic"
-iso_label="EZARCH-COSMIC_$(date --date="@${SOURCE_DATE_EPOCH:-$(date +%s)}" +%y%m)"
+iso_name="nyarch-cosmic"
+iso_label="NYARCH-COSMIC_$(date --date="@${SOURCE_DATE_EPOCH:-$(date +%s)}" +%y%m)"
 iso_publisher="Ezarcher Linux <https://sourceforge.net/projects/ezarch/>"
 iso_application="Ezarcher DVD"
 iso_version="$(date --date="@${SOURCE_DATE_EPOCH:-$(date +%s)}" +%y%m)"
@@ -25,6 +25,6 @@ file_permissions=(
   ["/usr/local/bin/livecd-sound"]="0:0:755"
   ["/usr/local/bin/ezmaint"]="0:0:755"
   ["/usr/local/bin/grubinstall.sh"]="0:0:755"
-  ["/usr/local/bin/ezarch.bios"]="0:0:755"
-  ["/usr/local/bin/ezarch.uefi"]="0:0:755"
+  ["/usr/local/bin/nyarch.bios"]="0:0:755"
+  ["/usr/local/bin/nyarch.uefi"]="0:0:755"
 )
